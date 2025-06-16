@@ -17,7 +17,6 @@ def go_to_cafe(friends: list[dict], cafe: Cafe) -> str:
             print(f"An unexpected error occurred for "
                   f"{friend.get('name', 'a friend')}: {e}")
             all_vaccinated = False
-            break
 
     if not all_vaccinated:
         return "All friends should be vaccinated"
